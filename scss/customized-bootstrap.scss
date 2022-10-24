@@ -1,0 +1,28 @@
+$blue:#0A84FF;
+$primary: #0A84FF;
+$dange: rgba(255, 59, 48, 1.0);
+$success: rgba(52, 199, 89, 1.0);
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+*:not(.shadow-lg):not(.shadow):not(.shadow-sm):focus {
+    box-shadow: none !important;
+}
+
+.img-thumbnail {
+    max-width: 300px;
+    max-height: 300px;
+    border: 0 !important;
+    background-color: var(--background-detail);
+}
+
+.fw-bolder {
+    font-weight: 800;
+}
+
+#heart {
+    cursor: default;
+}
+
+#heart:hover {
+    cursor: default;
+    color: $dange;
+}

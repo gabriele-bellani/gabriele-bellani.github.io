@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;500;600;700;900&display=swap');
+*:root[data-theme=dark] {
+    --font-family: 'Lato', sans-serif;
+    --background-color: #303030;
+    --background-detail: #424242;
+    --foreground-color: #FFF;
+    --primary-color: #0A84FF;
+    --header-background-image: url("/assets/images/header-dark.png");
+    --header-linear-gradient: linear-gradient(rgba(10, 132, 255, 0.05), rgba(10, 132, 255, 0.55));
+}
+
+*:root[data-theme=light] {
+    --font-family: 'Lato', sans-serif;
+    --background-color: #F5F5FA;
+    --background-detail: #FFF;
+    --foreground-color: #303030;
+    --primary-color: #0A84FF;
+    --header-background-image: url("/assets/images/header-light.jpg");
+    --header-linear-gradient: linear-gradient(rgba(10, 132, 255, 0.18), rgba(10, 132, 255, 0.85));
+}
+
+* {
+    --deley-animation: 0.3;
+    transition-duration: 0.85s;
+    font-family: var(--font-family) !important;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+    overflow-x: hidden !important;
+    width: 100vw !important;
+}
+
+a {
+    transition-duration: 0.35s !important;
+    color: var(--foreground-color);
+}
+
+a:hover {
+    transition-duration: 0.35s !important;
+    color: var(--primary-color);
+}
+
+.g-hr {
+    -webkit-box-shadow: 0px 0px 4px var(--primary-color);
+    -moz-box-shadow: 0px 0px 4px var(--primary-color);
+    box-shadow: 0px 0px 4px var(--primary-color);
+}
+
+.bi-icon:hover {
+    transition: 1s;
+    transform: scale(1.2) rotate(1turn);
+}
+
+.primary-label {
+    font-weight: 600;
+}
+
+.secondary-label {
+    font-weight: 300;
+}
+
+
+/* HEADER */
+
+.header-wrapper {
+    background-color: transparent;
+    background-image: var(--header-linear-gradient);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    width: 100vw;
+    height: 50vh;
+}
+
+.header {
+    width: 100vw;
+    height: 100vh;
+    z-index: -10 !important;
+    transition: 0s !important;
+    transition-duration: 0s !important;
+    background-image: var(--header-background-image);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.header-gradient {
+    position: relative;
+    background-image: var(--header-linear-gradient);
+    margin-top: -100vh;
+    height: 100vh;
+    width: 100%;
+}
