@@ -5,7 +5,7 @@
     --background-detail: #424242;
     --foreground-color: #FFF;
     --primary-color: #0A84FF;
-    --header-background-image: url("/assets/images/header-dark.png");
+    --header-background-image: url("/assets/images/header-dark.webp");
     --header-linear-gradient: linear-gradient(rgba(10, 132, 255, 0.05), rgba(10, 132, 255, 0.55));
 }
 
@@ -15,7 +15,7 @@
     --background-detail: #FFF;
     --foreground-color: #303030;
     --primary-color: #0A84FF;
-    --header-background-image: url("/assets/images/header-light.jpg");
+    --header-background-image: url("/assets/images/header-light.webp");
     --header-linear-gradient: linear-gradient(rgba(10, 132, 255, 0.18), rgba(10, 132, 255, 0.85));
 }
 
@@ -51,6 +51,11 @@ a:hover {
 .bi-icon:hover {
     transition: 1s;
     transform: scale(1.2) rotate(1turn);
+}
+
+.animation-container {
+    overflow-x: hidden !important;
+    width: 100% !important;
 }
 
 .primary-label {
